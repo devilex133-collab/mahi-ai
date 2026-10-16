@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
@@ -27,7 +28,7 @@ object Routes {
 fun MahiNavHost(settingsViewModel: SettingsViewModel) {
     val nav = rememberNavController()
     val back: () -> Unit = { nav.popBackStack() }
-    Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
+    Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
         NavHost(nav, startDestination = Routes.HOME) {
             composable(Routes.HOME) {
                 HomeScreen(settingsViewModel = settingsViewModel, onNavigate = { nav.navigate(it) })
