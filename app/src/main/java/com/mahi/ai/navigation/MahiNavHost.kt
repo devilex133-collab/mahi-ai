@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.mahi.ai.ui.chat.ChatScreen
 import com.mahi.ai.ui.common.PlannedScreen
 import com.mahi.ai.ui.home.HomeScreen
 import com.mahi.ai.ui.settings.SettingsScreen
@@ -34,7 +35,7 @@ fun MahiNavHost(settingsViewModel: SettingsViewModel) {
                 HomeScreen(settingsViewModel = settingsViewModel, onNavigate = { nav.navigate(it) })
             }
             composable(Routes.SETTINGS) { SettingsScreen(settingsViewModel, back) }
-            composable(Routes.CHAT) { PlannedScreen("Chat", "Phase 2", back) }
+            composable(Routes.CHAT) { ChatScreen(onBack = back) }
             composable(Routes.VOICE) { PlannedScreen("Real-time voice", "Phase 3", back) }
             composable(Routes.MEMORY) { PlannedScreen("Memory", "Phase 4", back) }
             composable(Routes.CODING) { PlannedScreen("Coding Studio", "Phase 7", back) }
