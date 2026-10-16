@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mic">ভয়েস</string>
+    <string name="chat">চ্যাট</string>
+    <string name="coding">কোডিং স্টুডিও</string>
+    <string name="memory">স্মৃতি</string>
+    <string name="settings">সেটিংস</string>
+    <string name="stop_session">সেশন শেষ করুন</string>
+    <string name="recent">সাম্প্রতিক কথোপকথন</string>
+    <string name="dark_theme">ডার্ক থিম</string>
+    <string name="reduced_motion">অ্যানিমেশন কমান</string>
+    <string name="back">পিছনে</string>
+</resources>

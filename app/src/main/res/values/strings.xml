@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mahi AI</string>
+    <string name="greeting">হ্যালো জান, আমি মাহি।</string>
+    <string name="status_ai">AI: not connected (Phase 2)</string>
+    <string name="status_mic">Microphone: not requested (Phase 3)</string>
+    <string name="session_idle">No active session</string>
+    <string name="mic">Voice</string>
+    <string name="chat">Chat</string>
+    <string name="coding">Coding Studio</string>
+    <string name="memory">Memory</string>
+    <string name="settings">Settings</string>
+    <string name="stop_session">End session</string>
+    <string name="recent">Recent conversations</string>
+    <string name="recent_empty">No conversations yet. Chat arrives in Phase 2.</string>
+    <string name="planned_title">Planned feature</string>
+    <string name="planned_body">%1$s is not implemented yet. It is scheduled for %2$s.</string>
+    <string name="back">Back</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="reduced_motion">Reduce animations</string>
+    <string name="settings_note">Settings are kept in memory only in this milestone; persistence (DataStore) comes later.</string>
+</resources>
